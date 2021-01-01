@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Our Story ♡</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <audio src="LoveYou.mp3" autoplay="autoplay"></audio>
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <img src="sm6.jpg" class="img-circle">
+      <h1>Our Story Begins</h1>
+      <h2>Dec 20 2020, 02.00 PM</h2>
+      <br><br>
+      <span>Do everything in love.</span>
+      <p>(1 Corinthians 16:14)</p>
+    </div> 
+    <!-- Akhir Jumbotron -->
+    <selection class="about" id="about">
+      <div class="container">
+        <br><br><br><br><br><br><br>
+        <h2>Now :</h2>
+        <div class="time">
+            <div id="day">NA</div>
+            <div id="hour">NA</div>
+            <div id="minute">NA</div>
+            <div id="second">NA</div>
+        </div>
+    </div>
+    </selection>
+
+    <script type="text/javascript">
+      var countDate = new Date('Dec 20, 2020 14:00:00').getTime();
+
+      function love(){
+          var now = new Date().getTime();
+          gap =now - countDate;
+
+          var second = 1000;
+          var minute = second * 60;
+          var hour = minute * 60;
+          var day = hour * 24;
+
+          var d = Math.floor(gap / (day));
+          var h = Math.floor((gap % (day)) / (hour));
+          var m = Math.floor((gap % (hour)) / (minute));
+          var s = Math.floor((gap % (minute)) / (second));
+
+          document.getElementById('day').innerText = d;
+          document.getElementById('hour').innerText = h;
+          document.getElementById('minute').innerText = m;
+          document.getElementById('second').innerText = s;
+      }
+
+      setInterval(function(){
+          love();
+      },1000)
+    </script>
+
+    <selecion class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h2>Gallery</h2>
+            <br><br><br><br>
+          </div>
+        </div>
+
+        <div class="row"> 
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="tk.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm10.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm8.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm2.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm9.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm3.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm4.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm5.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="sm7.jpg">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </selecion>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
